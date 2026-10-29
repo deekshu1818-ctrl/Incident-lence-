@@ -1,0 +1,16 @@
+timestamp,service,source,severity,message,fingerprint,dependency
+2026-10-29T08:00:00Z,db-primary,database,critical,Database response time above threshold,db-latency,db-primary
+2026-10-29T08:01:00Z,checkout-api,api,high,Checkout API latency elevated,api-latency,db-primary
+2026-10-29T08:02:00Z,payments,service,high,Payment error rate increased,error-rate,db-primary
+2026-10-29T08:03:00Z,catalog-api,api,medium,Catalog requests slower than normal,api-latency,db-primary
+2026-10-29T08:04:00Z,web-gateway,gateway,high,Gateway 5xx responses elevated,error-rate,db-primary
+2026-10-29T08:10:00Z,worker-queue,worker,medium,Queue processing delay,queue-delay,worker-queue
+2026-10-29T08:11:00Z,email-worker,service,low,Email job duration increased,queue-delay,worker-queue
+2026-10-29T08:15:00Z,auth-service,service,critical,Authentication failures above baseline,auth-failure,auth-service
+2026-10-29T08:16:00Z,login-api,api,high,Login API 401/5xx spike,auth-failure,auth-service
+2026-10-29T08:20:00Z,storage-node-4,infrastructure,medium,Disk utilization reached warning threshold,disk-usage,storage-node-4
+2026-10-29T08:23:00Z,recommendation-api,api,low,Response time mildly elevated,api-latency,recommendation-api
+2026-10-29T08:25:00Z,edge-proxy,gateway,high,Unusual connection reset rate,connection-reset,edge-proxy
+2026-10-29T08:26:00Z,customer-status,status-page,high,Customer-facing degradation reported,status-degradation,db-primary
+2026-10-29T08:29:00Z,db-replica,database,medium,Replication lag increased,db-latency,db-primary
+2026-10-29T08:35:00Z,batch-runner,worker,low,Scheduled batch completed slowly,job-duration,batch-runner
